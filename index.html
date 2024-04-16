@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+    <title>Borgis - Desenvolvimento</title>
+    <link rel="stylesheet" href="assets/css/style-index.css">
+</head>
+<body>
+    <header>
+        <img src="assets/imgs/logo-borgis.svg" alt="Logo Borgis">
+    </header>
+    <main >
+        <h1>Estamos em manutenção. Que tal dar uma olhada no nosso último <a href="https://borgis.com.br/htmls/relatorios.html">Projeto</a>?</h1>
+        <section class="contato">
+            <h2>Fale conosco</h2>
+            <form id="frmContato" action="https://formsubmit.co/c2db06353ae8633bc7feb4b4b7a98e05" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="ex: contato@borgis.com.br" autocomplete="on">
+                <label>Telefone</label>
+                <input type="tel" name="telefone" placeholder="(99) 9 99999999" autocomplete="off">
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                <button id="btnFrmEnvia" type="submit" >Enviar</button>
+                <input type="hidden" name="_next" value="https://borgis.com.br/htmls/thanks.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,220 @@
+/*Estilos universais*/
+
+@media screen and (min-width: 768px) {
+    main section {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 767px) {
+    main section {
+        width: 90%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif; 
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    font-size: clamp(1.5em, 1em + 2vw, 2em);
+    padding-bottom: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e8461d;
+}
+
+h2 {
+    font-size: clamp(1em, 1em + 1vw, 1.5em);
+    padding-bottom: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e8461d;
+}
+
+h3 {
+    font-size: clamp(.5em, .5em + 1vw, 1em);
+    padding-bottom: 0.5em;
+}
+
+p {
+    font-size: clamp(0.7em, 0.7em + 1vw, 1em);
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/*Estilos seção*/
+
+header {
+    display: flex;
+    align-items: center;
+    /* background-color: rgba(255, 102, 0, 0.24); */
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+header a {
+    margin: auto;
+    height: 90%;
+    width: 30%;
+}
+
+header img {
+    margin: auto;
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+
+/* inicio da main  */
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main a {
+    color: #e8461d;
+    font-weight: bold;
+    font-optical-sizing: auto;
+    cursor: pointer;
+}
+
+main section {
+    /* width: 90%; */
+    margin: auto;
+    padding: 0 0 2rem;
+}
+
+.titulo {
+    padding-top: 15vh;
+}
+
+.baixar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* fim da main  */
+
+/* inicio css seção galeria  */
+
+.galeria {
+    height: 50vh;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+}
+
+.slider .btn {
+    width: 5%;
+    height: 5%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-btn {
+    transform: rotate(180deg);
+}
+
+.slider .btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+ .slider-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ocupa toda a altura do slider */
+    width: 80%; /* Ocupa 80% da largura da galeria */
+}
+
+.slider-images .img-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.slider-images .img-slide.on {
+    opacity: 1;
+}
+
+/* Fim do css seção galeria */
+
+/* inicio do footer */
+footer {
+    background-color: black;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.logo-footer {
+    height: 30%;
+    width: 20%;
+    object-fit: cover;
+    padding-bottom: 5rem;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+footer nav div a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
+    font-size: clamp(0.7em, 0.7em + 1vw, 1em);
+}
+
+footer .copy {
+    background-color: #e8461d;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.copy span {
+    color: #fff;
+    text-align: center;
+    font-size: clamp(0.7em, 0.7em + 0.7vw, 1em);
+}
