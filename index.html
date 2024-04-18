@@ -3,35 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAP ICONS-->
     <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+    <meta name="description" content="Bem-vindo ao Borgis! Sou um desenvolvedor de software apaixonado por transformar ideias em realidade. No Borgis, ofereço serviços de desenvolvimento web, criação de aplicativos móveis, automação comercial e consultoria em tecnologia da informação. Tenho experiência em Delphi, desenvolvimento web, bancos de dados/SQL e muito mais. Entre em contato comigo para discutir como posso ajudar a transformar suas ideias em soluções de software personalizadas e inovadoras.">
+    <meta name="keywords" content="Borgis, desenvolvimento de software, desenvolvimento web, aplicativos móveis, automação comercial, consultoria em TI, Delphi, HTML, CSS, JavaScript, Node.js, PostgreSQL, MySQL, Firebird, gerador de relatórios, FastReport, sistema Gdoor, Firebird 2.0">
     <title>Borgis - Desenvolvimento</title>
     <link rel="stylesheet" href="assets/css/style-index.css">
+    <script src="/assets/js/script-index.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="assets/imgs/logo-borgis.svg" alt="Logo Borgis">
+        <div class="container">
+            <div class="logo">
+                <a href="#topo">
+                    <img src="assets/imgs/logo-borgis.svg" alt="Logo da pagina e botão para voltar ao inicio">
+                </a>
+            </div><!-- logo --> 
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#topo">Inicio</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
+                </ul>
+            </nav><!-- menu-desktop -->
+
+            <div class="btn-contato">
+                <a href="#contato">
+                    <button>
+                        contato
+                    </button>
+                </a>
+            </div><!-- btn-contato -->
+
+            <div id="ab-menu" class="btn-abrir-menu">
+                <i class="bi bi-list"></i>
+            </div> <!-- fim-btn-abrir-menu -->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div> <!-- fim-btn-fechar -->
+
+                <nav>
+                    <ul>
+                        <li><a href="#topo">Inicio</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav><!-- nav-menu-mobile -->
+            </div> <!-- fim-menu-mobile -->
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
+
+        </div><!-- container -->
     </header>
     <main >
-        <h1>Estamos em manutenção. Que tal dar uma olhada no nosso último <a href="https://borgis.com.br/htmls/relatorios.html">Projeto</a>?</h1>
-        <section class="contato">
-            <h2>Fale conosco</h2>
-            <form id="frmContato" action="https://formsubmit.co/c2db06353ae8633bc7feb4b4b7a98e05" method="post">
-                <label>Nome</label>
-                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
-                <label>Email</label>
-                <input type="email" name="email" placeholder="ex: contato@borgis.com.br" autocomplete="on">
-                <label>Telefone</label>
-                <input type="tel" name="telefone" placeholder="(99) 9 99999999" autocomplete="off">
-                <label>Mensagem</label>
-                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-                <button id="btnFrmEnvia" type="submit" >Enviar</button>
-                <input type="hidden" name="_next" value="https://borgis.com.br/htmls/thanks.html">
-                <input type="hidden" name="_captcha" value="false">
-            </form>
-        </section>
-    </main>
+
+        <section id="topo" class="topo-pg">
+            <div class="container">
+                <div class="flex">
+
+                    <div class="txt-topo-pg">
+                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE<SPAN>.</SPAN></h1>
+                        <p>Transformar ideias em soluções reais é a minha missão. Do conceito ao código, cada projeto é um novo desafio a ser conquistado. Eu vivo a paixão pela programação, cada linha de código é uma expressão de criatividade e dedicação.</p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>
+                                    Entre em contato
+                                </button>
+                            </a>
+                        </div> <!-- fim-btn-contato -->
+                    </div> <!-- fim-txt-topo-pg -->                    
+
+                    <div class="img-topo-pg">
+                        <img src="assets/imgs/borgis-perfil.png" alt="Uma foto de perfil do Borgis">
+                    </div> <!-- fim-img-topo-pg -->
+                </div> <!-- fim-flex -->
+            </div> <!-- fim-container -->
+        </section> <!-- fim-topo-pg -->
+
+        <section id="especialidades" class="especialidades">
+            <div class="container">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="card">
+                        <img src="/assets/imgs/delphi-icon.png" alt="Icone do Delphi retirado da Icons8">
+                        <h3>Delphi</h3>
+                        <p>Experiência no desenvolvimento de aplicações utilizando a linguagem Object Pascal, na IDE Delphi e Lazarus, em projetos como controle de contas, ERP e gerador de relatórios.</p>
+                    </div> <!-- fim-card -->
+
+                    <div class="card">
+                        <img src="assets/imgs/web-icon.png" alt="Icone do Delphi retirado da Icons8">
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Experiência sólida em desenvolvimento web, utilizando HTML, CSS, JavaScript e Node.js.</p>
+                    </div> <!-- fim-card -->
+
+                    <div class="card">
+                        <img src="/assets/imgs/database-icon.png" alt="Icone do Delphi retirado da Icons8">
+                        <h3>Banco de Dados/SQL</h3>
+                        <p>Ampla experiência na manipulação de dados em bancos relacionais, incluindo PostgreSQL, MySQL, Firebird, entre outros.</p>
+                    </div> <!-- fim-card -->
+                </div> <!-- fim-flex -->
+            </div> <!-- fim-container -->
+        </section> <!-- fim-especialidades -->
+
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <div class="flex">
+
+                    <div class="img-sobre">
+                        <img src="/assets/imgs/borgis-integer.jpeg" alt="Um foto de perfil do Borgis">
+                    </div> <!-- fim-img-sobre -->
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU VINICIUS BORGES.</span></h2>
+                        <p>Sou um entusiasta da tecnologia e um apaixonado por desenvolvimento de software. Com uma sólida experiência em automação comercial, descobri minha paixão pelo mundo da programação e desde então venho aprimorando minhas habilidades em diversas áreas.</p>
+                        <p>Com projetos publicados e uma trajetória que abrange desde o desenvolvimento de software com Delphi até a exploração de linguagens como JavaScript, Node.js e C++, estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente.</p>
+                        <p>Meu foco vai além da simples criação de aplicações; estou constantemente buscando maneiras de inovar, resolver problemas de forma eficiente e impactar positivamente a vida das pessoas através da tecnologia.</p>
+                        <p>Seja para desenvolver soluções inteligentes para automação comercial ou explorar novas possibilidades no vasto mundo do desenvolvimento de software, estou sempre pronto para enfrentar novos desafios e transformar ideias em realidade.</p>
+
+                        <div class="btn-social">
+                            <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+                            <a href="#"><button><i class="bi bi-github"></i></button></a>
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        </div> <!-- FIM-BTN-SOCIAL -->
+                    </div> <!-- fim-txt-sobre --> 
+
+                </div> <!-- fim-flex -->
+            </div> <!-- fim-container -->
+        </section> <!-- fim-sobre -->
+
+        <section id="portfolio" class="portifolio">
+            <div class="container">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port">
+                            <iframe scrolling="no" src="https://borgis.com.br/htmls/relatorios.html" width="100%" height="100%"></iframe>  
+                            <div class="overlay">
+                                Borgis - Relatórios Personalizados
+                            </div>         
+                    </div> <!-- fim-img-port -->                   
+                </div> <!-- fim-flex -->
+            </div> <!-- fim-container -->
+        </section> <!-- fim-portifolio -->
+
+        <section id="contato" class="contato">
+            <div class="container">
+                <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+                    <form id="frmContato" action="https://formsubmit.co/c2db06353ae8633bc7feb4b4b7a98e05" method="post">
+                        <input type="text" name="name" placeholder="Digite seu nome: Fulano de Tal" autocomplete="off">
+                        <input type="email" name="email" placeholder="Digite seu email: contato@borgis.com.br" autocomplete="on">
+                        <input type="tel" name="telefone" placeholder="Seu telefone: (99) 9 99999999" autocomplete="off">
+                        <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                        <!-- <button id="btnFrmEnvia" type="submit" >ENVIAR</button> -->
+                        <input type="hidden" name="_next" value="https://borgis.com.br/htmls/thanks.html">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form> <!-- fim-formulario -->
+            </div> <!-- fim-container -->
+        </section> <!-- fim-contato -->
+    </main> <!-- fim-da-main -->
+
+    <footer>
+        <div class="container">
+
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="/assets/imgs/logo-borgis.svg" alt="Logo borgis">
+                    </div>
+                    <div class="btn-social">
+                        <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+                        <a href="#"><button><i class="bi bi-github"></i></button></a>
+                        <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                    </div> <!-- fim-btn-social -->
+                </div>
+            </div> <!-- fim-da-linha -->
+
+            <div class="line-footer cborda">
+                <div class="flex">
+                    <p><i class="bi bi-envelope-fill"></i> <a href="mailto:contato@borgis.com.br">contato@borgis.com.br</a></p>
+                </div>
+                
+            </div> <!-- fim-da-linha -->
+
+        </div> <!-- fim-do-container -->
+    </footer> <!-- fim-do-footer -->
 </body>
 </html>
