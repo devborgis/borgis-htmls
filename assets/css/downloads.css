@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO DO HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+}
+
+header .logo-h {
+    width: 100px;
+    height: 90%px;
+    margin: 0 auto;
+}
+
+header .logo-h img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* ESTILO DA MAIN */
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
